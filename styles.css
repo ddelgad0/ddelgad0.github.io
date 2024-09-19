@@ -40,7 +40,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Make the section cover full height of the screen */
+    min-height: 50vh; /* Make the section cover full height of the screen */
 }
 
 .intro-content {
