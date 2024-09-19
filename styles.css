@@ -34,10 +34,31 @@ section {
     padding: 60px 20px;
     text-align: center;
 }
-
 #home {
     background-color: #ee6c4d;
-    color:white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Make the section cover full height of the screen */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
 .intro h1 {
