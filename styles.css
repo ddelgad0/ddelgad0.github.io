@@ -51,7 +51,8 @@ section {
 
 /* Styling for images */
 .profile-pic {
-    scale: 0.4;
+    width: 10%;
+    height: auto;
     margin-bottom: 5px;
 }
 
