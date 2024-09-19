@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #293241;
     padding: 20px;
     text-align: center;
 }
@@ -36,8 +36,8 @@ section {
 }
 
 #home {
-    background-color: #333;
-    color: white;
+    background-color: #ee6c4d;
+    color:white;
 }
 
 .intro h1 {
@@ -51,7 +51,8 @@ section {
 
 /* Styling for images */
 .profile-pic {
-    width: 1%;
+    width: 10%;
+    border-radius: 50%;
     height: auto;
     margin-bottom: 5px;
 }
@@ -68,8 +69,14 @@ section {
     border-radius: 8px;
 }
 
-#about, #projects, #contact {
-    background-color: white;
+#projects {
+    background-color: #98c1d9;
+    
+}
+
+#contact {
+    background-color: #3d5a80;
+    color:white;
 }
 
 #projects .project-list {
