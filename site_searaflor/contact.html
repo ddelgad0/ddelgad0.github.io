@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nome da Empresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluindo a fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/searaflorlogo.png" alt="Logo da Searaflor">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-grid">
+                <!-- Formulário de Contato -->
+                <div class="contact-form">
+                    <form>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                        
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Mapa do Google Maps -->
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.8431428943018!2d-8.970126224222735!3d39.45027717161127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd18bb4240e6d119%3A0x9cc3ba05c0c36484!2sSearaflor!5e0!3m2!1spt-PT!2spt!4v1728911798197!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
