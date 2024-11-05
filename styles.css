@@ -187,7 +187,23 @@ nav ul li a:hover {
     margin-bottom: 1rem; /* Espaço abaixo da imagem */
 }
 
+/* Estilo para os ícones de contato */
+.icone-contato {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-right: 8px; /* Espaço à direita do ícone */
+}
 
+/* Estilo adicional para os links */
+.contato a {
+    color: #333; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhação */
+}
+
+.contato a:hover {
+    text-decoration: underline; /* Adiciona sublinhação ao passar o mouse */
+}
 
 /* Animação de Fade-In */
 .fade-in {
