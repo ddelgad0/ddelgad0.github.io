@@ -205,6 +205,47 @@ nav ul li a:hover {
     text-decoration: underline; /* Adiciona sublinhação ao passar o mouse */
 }
 
+/* Seção Sobre */
+.sobre {
+    background-color: #f9f9f9; /* Fundo suave para contrastar */
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a seção */
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333; /* Cor do título */
+}
+
+.sobre-conteudo {
+    font-size: 1rem;
+    color: #555; /* Cor do texto */
+    line-height: 1.6;
+}
+
+.sobre p {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a lista na seção Sobre */
+.sobre-lista {
+    list-style-type: disc; /* Define o estilo dos marcadores */
+    padding-left: 20px; /* Espaço entre a lista e o texto principal */
+    text-align: left; /* Alinha a lista à esquerda */
+    margin: 20px 0;
+}
+
+.sobre-lista li {
+    margin-bottom: 10px; /* Espaço entre cada item da lista */
+    font-size: 1rem;
+    color: #555; /* Cor do texto */
+}
+
 /* Animação de Fade-In */
 .fade-in {
     opacity: 0;
