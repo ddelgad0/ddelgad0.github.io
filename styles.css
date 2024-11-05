@@ -1,133 +1,194 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset Básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Cinza muito claro para fundo */
+    color: #333; /* Preto suave para o texto */
+}
+
+/* Estilo do Header */
 header {
-    background-color: #293241;
-    padding: 20px;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff; /* Branco para o fundo do header */
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #333; /* Preto suave para os links */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
-section {
-    padding: 60px 20px;
+nav ul li a:hover {
+    color: #0056b3; /* Azul suave para hover */
+}
+
+/* Seções */
+.section {
+    padding: 6rem 1.5rem;
     text-align: center;
 }
-#home {
-    background-color: #ee6c4d;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh; /* Make the section cover full height of the screen */
+
+.apresentacao {
+    background: linear-gradient(120deg, #e6e6e6, #ffffff); /* Gradiente cinza claro e branco */
+    color: #333;
+    padding-top: 8rem;
 }
 
-.intro-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.text {
-    flex: 1;
-}
-
-.profile-pic {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 20px;
-}
-
-.intro h1 {
+.apresentacao h1 {
     font-size: 3rem;
-    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
-.intro p {
+.apresentacao .subtitulo {
     font-size: 1.5rem;
+    font-weight: 300;
+    color: #555;
 }
 
-/* Styling for images */
-.profile-pic {
-    width: 10%;
-    border-radius: 50%;
-    height: auto;
-    margin-bottom: 5px;
+.destaque {
+    color: #0056b3; /* Azul suave para o destaque */
 }
 
-.about-pic {
-    width: 300px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-#projects {
-    background-color: #98c1d9;
-    
-}
-
-#contact {
-    background-color: #3d5a80;
-    color:white;
-}
-
-#projects .project-list {
+/* Seção de Projetos */
+.projetos-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-.project {
-    background-color: #f8f8f8;
-    padding: 20px;
+.projeto-card {
+    background-color: #ffffff; /* Branco para os cards */
+    padding: 2rem;
+    width: 280px;
     border-radius: 8px;
-    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.projeto-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Sombra suave ao hover */
 }
 
-@media (max-width: 768px) {
-    .project-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+.projeto-card h3 {
+    color: #0056b3;
 }
+
+/* Seção Sobre */
+.sobre p {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo da seção de Contato */
+.contato p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.contato-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contato-links a {
+    color: #333; /* Cor principal dos links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contato-links a:hover {
+    background-color: #f0f0f0; /* Fundo cinza claro no hover */
+    color: #0056b3; /* Azul suave no hover */
+}
+
+.contato-links i {
+    font-size: 1.3rem; /* Tamanho dos ícones */
+    color: #0056b3; /* Cor dos ícones */
+}
+
+/* Estilo para os links dos projetos */
+.projeto-link {
+    text-decoration: none; /* Remove a sublinhação */
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+.projeto-link:hover {
+    color: inherit; /* Mantém a cor ao passar o mouse */
+}
+
+/* Estilo da apresentação */
+.apresentacao-conteudo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: left; /* Alinha texto à esquerda */
+    gap: 20px; /* Espaço entre imagem e texto */
+}
+
+.apresentacao-imagem-texto {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+}
+
+/* Estilo para a foto pessoal */
+.minha-foto {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Mantém a proporção de altura */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Corta a imagem para caber no círculo */
+    margin-right: 1rem; /* Espaço à direita da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Animação de Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
