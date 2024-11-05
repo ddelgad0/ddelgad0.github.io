@@ -179,6 +179,15 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo para as imagens dos projetos */
+.projeto-imagem {
+    width: 100%; /* Largura total do card */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas na parte superior */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+
 
 /* Animação de Fade-In */
 .fade-in {
