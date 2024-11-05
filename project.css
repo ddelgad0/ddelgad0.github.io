@@ -1,0 +1,123 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Seções de Conteúdo */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para a descrição do projeto */
+.projeto-descricao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilo para a galeria de imagens */
+.projeto-imagens .imagem-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projeto-imagens img {
+    width: calc(33.333% - 20px); /* Cada imagem ocupa 1/3 da largura */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease;
+}
+
+.projeto-imagens img:hover {
+    transform: scale(1.05); /* Leve efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para o vídeo */
+.projeto-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilo para a lista de tecnologias */
+.projeto-tecnologias ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding-left: 0;
+    text-align: center;
+}
+
+.projeto-tecnologias li {
+    font-size: 1rem;
+    padding: 8px 0;
+    color: #555;
+}
+
+/* Link de voltar ao portfólio */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.voltar-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.voltar-link:hover {
+    color: #555;
+}
+
+/* Estilo para o botão de navegação de volta ao topo */
+.topo-navegacao {
+    text-align: left;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.botao-home {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-home:hover {
+    background-color: #d0d0d0;
+}
