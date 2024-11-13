@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous car</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Botão de Voltar para a Página Inicial -->
+    <nav class="topo-navegacao">
+        <a href="..\index.html" class="botao-home">← Voltar</a>
+    </nav>
+    <header>
+        <h1>Autonomous car</h1>
+        <p class="subtitulo">Final degree project that includes the electronics of an autonomous vehicle. Done in partnership with another course colleague.</p>
+        <img src="../imagens/car/CAR.JPG" alt="Imagem do Projeto 1" width="300">
+    </header>
+
+    <section class="projeto-descricao">
+        <p>In this project, PCBs were designed and produced to make the electronic part of the vehicle. This being my first contact with PCB design, I can say that I loved it and for that reason I do it with you in my free time.</p>
+        <p>I would like to share all the schematics, layouts of the PCBs and all the programming, however I fear that it may suffer from ownership issues due to it being made at the university and possibly still being used.</p>
+        <h2>Turn Signal PCB</h2>
+        <p>The first PCB to be corrected and produced was the one for the turn signals, I say corrected because it had already been started to be developed the previous year by other colleagues, hence the names of the same. This super simple PCB has only 3 RGB LEDs and the output for communication with them, these allow several to be interconnected and controlled individually.</p>
+        <img src="../imagens/car/LED_FRONT.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <img src="../imagens/car/LED_BACK.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <h2>Turn Signal PCB Controller</h2>
+        <p>This PCB contains a PIC18F that controls the LEDs on the turn signal PCB via SPI communication. We can see that the soldering is not the best but we were new to that too :)</p>
+        <img src="../imagens/car/LED_CONTROLER.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <h2>Car steering PCB</h2>
+        <p>A PCB with a PIC32 capable of controlling the vehicle's servo motor in order to control its direction was developed.</p>
+        <img src="../imagens/car/DIRECTION_CONTROLLER.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <p>This PCB allowed the vehicle's steering to be controlled and adjusted according to the error associated with mechanical steering. These errors and deviations were obtained through experimental tests. </p>
+        <img src="../imagens/car/direction_test.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+    </section>
+
+    <section class="projeto-imagens">
+        <h2>Imagens do Projeto</h2>
+        <div class="imagem-galeria">
+            <img src="img/boat1.jpg" alt="Imagem do Projeto 1">
+            <img src="img/boat2.jpg" alt="Imagem do Projeto 2">
+            <img src="img/boat3.jpg" alt="Imagem do Projeto 3">
+        </div>
+    </section>
+
+    <section class="projeto-video">
+        <h2>Vídeo de Demonstração</h2>
+        <video controls>
+            <source src="videos/boat-demo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </section>
+
+    <section class="projeto-tecnologias">
+        <h2>Tecnologias Usadas</h2>
+        <ul>
+            <li>HTML5 e CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Bibliotecas de UI/UX</li>
+            <li>Integração com API</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="..\index.html" class="voltar-link">← Voltar ao Portfólio</a>
+    </footer>
+</body>
+</html>
