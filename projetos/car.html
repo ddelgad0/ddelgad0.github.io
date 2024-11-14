@@ -22,43 +22,38 @@
         <p>I would like to share all the schematics, layouts of the PCBs and all the programming, however I fear that it may suffer from ownership issues due to it being made at the university and possibly still being used.</p>
         <h2>Turn Signal PCB</h2>
         <p>The first PCB to be corrected and produced was the one for the turn signals, I say corrected because it had already been started to be developed the previous year by other colleagues, hence the names of the same. This super simple PCB has only 3 RGB LEDs and the output for communication with them, these allow several to be interconnected and controlled individually.</p>
-        <img src="../imagens/car/LED_FRONT.JPG" alt="Imagem do Projeto 1" width="300" class="center">
-        <img src="../imagens/car/LED_BACK.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <img src="../imagens/car/LED_FRONT.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <img src="../imagens/car/LED_BACK.JPG" alt="Imagem do Projeto 1" width="200" class="center">
         <h2>Turn Signal PCB Controller</h2>
         <p>This PCB contains a PIC18F that controls the LEDs on the turn signal PCB via SPI communication. We can see that the soldering is not the best but we were new to that too :)</p>
-        <img src="../imagens/car/LED_CONTROLER.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <img src="../imagens/car/LED_CONTROLER.JPG" alt="Imagem do Projeto 1" width="200" class="center">
         <h2>Car steering PCB</h2>
-        <p>A PCB with a PIC32 capable of controlling the vehicle's servo motor in order to control its direction was developed.</p>
-        <img src="../imagens/car/DIRECTION_CONTROLLER.JPG" alt="Imagem do Projeto 1" width="300" class="center">
-        <p>This PCB allowed the vehicle's steering to be controlled and adjusted according to the error associated with mechanical steering. These errors and deviations were obtained through experimental tests. </p>
-        <img src="../imagens/car/direction_test.JPG" alt="Imagem do Projeto 1" width="300" class="center">
-    </section>
-
-    <section class="projeto-imagens">
-        <h2>Imagens do Projeto</h2>
-        <div class="imagem-galeria">
-            <img src="img/boat1.jpg" alt="Imagem do Projeto 1">
-            <img src="img/boat2.jpg" alt="Imagem do Projeto 2">
-            <img src="img/boat3.jpg" alt="Imagem do Projeto 3">
-        </div>
-    </section>
-
-    <section class="projeto-video">
-        <h2>Vídeo de Demonstração</h2>
-        <video controls>
-            <source src="videos/boat-demo.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-    </section>
-
-    <section class="projeto-tecnologias">
-        <h2>Tecnologias Usadas</h2>
-        <ul>
-            <li>HTML5 e CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>Bibliotecas de UI/UX</li>
-            <li>Integração com API</li>
-        </ul>
+        <p>A PCB with a PIC32 capable of controlling the vehicle's servo motor in order to control its direction was developed.This PCB allowed the vehicle's steering to be controlled and adjusted according to the error associated with mechanical steering. These errors and deviations were obtained through experimental tests.</p>
+        <img src="../imagens/car/DIRECTION_CONTROLLER.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <img src="../imagens/car/direction_test.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <h2>SAMD</h2>
+        <p>And finally, a PCB was developed capable of powering and communicating with the remaining PCBs. The PCBs communicate with each other via CAN BUS communication.This also had a current and voltage sensor that allows monitoring these values ​​of the battery that powers the car. It also contains support for connecting an OLED display that shows these values.</p>
+        <img src="../imagens/car/SAMD_FRONT.JPG" alt="Imagem do Projeto 1" width="150" class="center">
+        <img src="../imagens/car/SAMD_BACK.JPG" alt="Imagem do Projeto 1" width="150" class="center">
+        <img src="../imagens/car/display.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <p>As we can see, not everything was well designed in the software, which is perfectly normal since there was only one opportunity to order PCBs. Therefore, some adjustments had to be made.</p>
+        <h2>Final Car</h2>
+        <p>Finally, all the PCBs were connected and mounted to the car chassis.</p>
+        <img src="../imagens/car/car_eletronics.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <img src="../imagens/car/car_front.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <h2>Other skills acquired</h2>
+        <h3>Circuit debug</h3>
+        <p>Several tests and debugging were carried out on the PCBs to check for components that were incorrectly dimensioned, connected, etc. Debugging and monitoring communications (mainly the CAN BUS) was also carried out.</p>
+        <img src="../imagens/car/debug.jpg" alt="Imagem do Projeto 1" width="200" class="center">
+        <img src="../imagens/car/communitcation.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <h3>Microcontroller Programming</h3>
+        <p>Another skill improved was the programming of microcontrollers, namely the Microchip PIC using the MPLAB software and C programming. Arduino was also used for prototyping and therefore the Arduino IDE was also used.</p>
+        <img src="../imagens/car/programming.JPG" alt="Imagem do Projeto 1" width="200" class="center">
+        <img src="../imagens/car/programming2.JPG" alt="Imagem do Projeto 1" width="300" class="center">
+        <h3>Prototype and welding</h3>
+        <p>PCB prototypes were also made at the university for testing and the entire manufacturing process was visualized. The ability to solder SMD components was also developed, since all components were soldered "by hand" by us.</p>
+        <img src="../imagens/car/prototiping.JPG" alt="Imagem do Projeto 1" width="250" class="center" >
+        <img src="../imagens/car/solder.JPG" alt="Imagem do Projeto 1" width="200" class="center">
     </section>
 
     <footer>
