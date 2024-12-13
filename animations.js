@@ -12,3 +12,4 @@ const observer = new IntersectionObserver((entries) => {
 }, options);
 
 faders.forEach(fader => observer.observe(fader));
+
