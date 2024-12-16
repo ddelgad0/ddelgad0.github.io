@@ -257,3 +257,122 @@ nav ul li a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Estilo Geral do Roadmap */
+#roadmap {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#roadmap h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Roadmap Vertical */
+.roadmap-vertical {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Mantém alinhado à esquerda */
+}
+
+/* Linha Vertical */
+.roadmap-vertical::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Posiciona a linha à esquerda */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    z-index: 1; /* Linha atrás */
+}
+
+/* Eventos Individuais */
+.roadmap-event {
+    position: relative;
+    padding-left: 50px; /* Espaço para a linha e o ponto */
+    margin-bottom: 60px; /* Mais espaço entre eventos */
+    text-align: left;
+    width: 100%;
+}
+
+/* Ponto do Evento */
+.event-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #4f4d4d;
+    border-radius: 50%;
+    position: absolute;
+    left: 16px; /* Alinha o ponto com a linha */
+    top: 0;
+    transform: translateY(5px); /* Alinha verticalmente */
+    z-index: 2; /* Ponto acima da linha */
+}
+
+/* Conteúdo do Evento */
+.event-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Muda para coluna para empilhar os elementos */
+    align-items: flex-start; /* Alinha os elementos ao topo */
+    gap: 10px; /* Espaço entre a data e a imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+/* Ano */
+.event-year {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+/* Imagem do Evento */
+.event-image {
+    width: 80px; /* Tamanho fixo da imagem */
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para estética */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto */
+.event-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .roadmap-event {
+        padding-left: 40px;
+    }
+
+    .roadmap-vertical::before {
+        left: 15px;
+    }
+
+    .event-dot {
+        left: 15px;
+    }
+
+    .event-content {
+        flex-direction: column; /* Coloca a data, imagem e texto em colunas */
+        align-items: center;
+    }
+
+    .event-image {
+        width: 100%; /* Ajusta a imagem para caber melhor */
+        max-width: 300px;
+    }
+}
+
